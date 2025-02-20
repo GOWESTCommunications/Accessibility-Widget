@@ -79,19 +79,63 @@
     }
 
     .asw-menu .asw-select {
-        width: 100% !important;
-        padding: 0px 15px!important;
-        font-size: 16px !important;
-        font-family: inherit !important;
-        font-weight: 600 !important;
-        border-radius: 12px !important;
-        background: #fff !important;
-        border: none !important;
-        min-height: 45px !important;
-        max-height: 45px !important;
-        height: 45px !important;
-        color: inherit !important;
+        width: 100%;
+        padding: 0.5em 3.5em 0.5em 1em;
+        font-size: 16px;
+        font-family: inherit;
+        font-weight: 600;
+        display: inline-block;
+        border-radius: 12px;
+        background: #fff;
+        border: none;
+        min-height: 45px;
+        max-height: 45px;
+        height: 45px;
+        color: inherit;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
     }
+
+    .asw-menu .asw-select {
+        background-image:
+                linear-gradient(45deg, transparent 50%, gray 50%),
+                linear-gradient(135deg, gray 50%, transparent 50%);
+        background-position:
+                calc(100% - 20px) calc(1em + 2px),
+                calc(100% - 15px) calc(1em + 2px),
+                calc(100% - 2.5em) 0.5em;
+        background-size:
+                5px 5px,
+                5px 5px,
+                1px 1.5em;
+        background-repeat: no-repeat;
+    }
+
+    .asw-menu .asw-select:focus {
+        background-image:
+                linear-gradient(45deg, blue 50%, transparent 50%),
+                linear-gradient(135deg, transparent 50%, blue 50%);
+        background-position:
+                calc(100% - 15px) 1em,
+                calc(100% - 20px) 1em,
+                calc(100% - 2.5em) 0.5em;
+        background-size:
+                5px 5px,
+                5px 5px,
+                1px 1.5em;
+        background-repeat: no-repeat;
+        border-color: blue;
+        outline: 0;
+    }
+
+
+    select:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+    }
+
 
     .asw-items {
         display: grid;
