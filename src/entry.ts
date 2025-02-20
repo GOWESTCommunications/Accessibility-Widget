@@ -1,6 +1,6 @@
 import sienna from "./sienna";
 
-function getDataAttribute(attr) {
+function getDataAttribute(attr: string) {
     attr = `data-asw-${ attr }`;
     return document?.querySelector(`[${ attr }]`)?.getAttribute(attr)
 }
