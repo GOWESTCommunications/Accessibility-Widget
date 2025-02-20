@@ -25,6 +25,8 @@ import pl from "../locales/pl.json";
 import pt from "../locales/pt.json";
 import ro from "../locales/ro.json";
 import ru from "../locales/ru.json";
+import se from "../locales/se.json";
+import si from "../locales/si.json";
 import sk from "../locales/sk.json";
 import sr from "../locales/sr.json";
 import sr_rs from "../locales/sr_rs.json";
@@ -66,6 +68,8 @@ export const LANGUAGE_DICTIONARY = {
   pt,
   ro,
   ru,
+  se,
+  si,
   sk,
   sr,
   "sr-SP": sr_rs,
@@ -183,6 +187,14 @@ export const LANGUAGES: ILanguage[] = [
   {
     code: "ru",
     label: "Русский (Russian)",
+  },
+  {
+    code: "se",
+    label: "Svenska (Swedish)",
+  },
+  {
+    code: "si",
+    label: "Slovenščina (Slovenian)",
   },
   {
     code: "sk",
