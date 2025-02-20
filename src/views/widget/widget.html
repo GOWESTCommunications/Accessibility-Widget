@@ -3,6 +3,22 @@
         --primary-color: rgba(95, 110, 95, 1);
     }
 
+    *:focus {
+    outline: solid 2px var(--primary-color) !important; 
+    }
+    *:focus:not(:focus-visible) {
+        outline: none !important;
+    }
+
+    .asw-menu-header *:focus {
+        outline: solid 2px white !important; 
+        outline-offset: 2px;
+    }
+
+    .asw-menu-header *:focus:not(:focus-visible) {
+        outline: none !important;
+    }
+
     .asw-menu {
         position: fixed;
         left: 20px;
@@ -12,7 +28,7 @@
         transition: .3s;
         z-index: 500000;
         overflow: hidden;
-        background: #eff1f5;
+        background: #f3f3f3;
         width: 500px;
         line-height: 1;
         font-size: 16px;
@@ -36,7 +52,7 @@
         justify-content: space-between;
         padding-left: 18px;
         padding-right: 18px;
-        height: 55px;
+        height: 60px;
         font-weight: 700 !important;
         background-color: var(--primary-color) !important;
     }
@@ -61,11 +77,15 @@
     }
 
     .asw-menu-header div[role="button"] {
-        padding: 5px;
         background: white !important;
         cursor: pointer;
         border-radius: 50%;
         transition: opacity .3s ease;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .asw-menu-header div[role="button"]:hover {
@@ -73,7 +93,7 @@
     }
 
     .asw-card {
-        margin: 0 15px 20px;
+        margin: 0 18px 1rem;
     }
 
     .asw-card-title {
@@ -118,7 +138,7 @@
 
     .asw-plus,
     .asw-minus {
-        background-color: #eff1f5 !important;
+        background-color: #EFEFEF !important;
         border: 2px solid transparent;
         transition: border .2s ease;
     }
@@ -193,8 +213,8 @@
 
     .asw-menu .asw-select {
         background-image:
-                linear-gradient(45deg, transparent 50%, gray 50%),
-                linear-gradient(135deg, gray 50%, transparent 50%);
+                linear-gradient(45deg, transparent 50%, black 50%),
+                linear-gradient(135deg, black 50%, transparent 50%);
         background-position:
                 calc(100% - 20px) calc(1em + 2px),
                 calc(100% - 15px) calc(1em + 2px),
@@ -208,8 +228,8 @@
 
     .asw-menu .asw-select:focus {
         background-image:
-                linear-gradient(45deg, var(--primary-color) 50%, transparent 50%),
-                linear-gradient(135deg, transparent 50%, var(--primary-color) 50%);
+                linear-gradient(45deg, black 50%, transparent 50%),
+                linear-gradient(135deg, transparent 50%, black 50%);
         background-position:
                 calc(100% - 15px) 1em,
                 calc(100% - 20px) 1em,
@@ -219,8 +239,6 @@
                 5px 5px,
                 1px 1.5em;
         background-repeat: no-repeat;
-        border-color: var(--primary-color);
-        outline: 0;
     }
 
     .asw-footer {
@@ -231,7 +249,7 @@
         background: #fff;
         padding: 20px;
         text-align: center;
-        border-top: 2px solid #eff1f5;
+        border-top: 2px solid #EFEFEF;
     }
 
     .asw-footer a {
@@ -249,8 +267,8 @@
 
     .asw-menu-content {
         overflow: scroll;
-        max-height: calc(100% - 55px);
-        padding: 30px 0 15px;
+        max-height: calc(100% - 60px);
+        padding: 20px 0 15px;
     }
 
     .asw-adjust-font {
@@ -279,7 +297,7 @@
     }
 
     .asw-adjust-font div[role="button"] {
-        background: #eff1f5 !important;
+        background: #EFEFEF !important;
         border-radius: 50%;
         width: 36px;
         height: 36px;
@@ -299,9 +317,11 @@
     }
 
     .contribution {
-        text-align: center;
-        padding: 20px;
+        padding: 8px 15px 0px 15px;
         font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .contribution a {
@@ -312,27 +332,31 @@
         gap: 8px;
         font-weight: 600 !important;
         flex-direction: column;
+        border-radius: 12px;
+        padding: 8px 15px;
     }
 
     .license {
         text-align: center;
         margin: 0 auto;
         font-size: 12px;
-        opacity: 0.4;
         display: block;
     }
 
     .license a {
         text-decoration: none !important;
+        border-radius: 12px;
+        padding: 2px 8px;
+        color: #aaaaaa !important;
     }
 
-    .license:hover {
-        opacity: 0.5;
+    .license:hover a {
+        color: #999999 !important;
     }
 
     @media only screen and (max-width: 560px) {
         .asw-menu {
-            width: 100%;
+            width: calc(100% - 40px);
         }
     }
 
