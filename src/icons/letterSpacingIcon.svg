@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <g id="text-tracking">
-    <g id="Pfad_34" data-name="Pfad 34">
-      <path d="M18.499,12.314h5.565" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Pfad_35" data-name="Pfad 35">
-      <path d="M5.415,23.314h21.169" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Pfad_36" data-name="Pfad 36">
-      <path d="M16.918,16.199h-.091l4.05-10.77h1.013l4.05,10.77h-.087" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Pfad_37" data-name="Pfad 37">
-      <path d="M6.137,5.429h-.079l4.05,10.77h1.013l4.05-10.77h-.094" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Pfad_38" data-name="Pfad 38">
-      <path d="M23.327,26.571l3.257-3.257-3.257-3.257" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Pfad_39" data-name="Pfad 39">
-      <path d="M8.672,26.571l-3.257-3.257,3.257-3.257" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-  </g>
+  <path d="M28.776,24.548c.056-.134.086-.279.086-.427s-.03-.293-.086-.427c-.057-.135-.138-.257-.241-.359l-3.616-3.615c-.434-.434-1.136-.434-1.57,0s-.434,1.136,0,1.57l1.722,1.721H6.927l1.721-1.721c.434-.434.434-1.136,0-1.57s-1.136-.434-1.57,0l-3.615,3.615c-.103.103-.184.225-.241.362-.112.271-.112.577,0,.848.056.136.138.259.241.362l3.615,3.615c.217.217.501.325.785.325s.568-.108.785-.325c.434-.434.434-1.136,0-1.57l-1.721-1.721h18.144l-1.722,1.721c-.434.434-.434,1.136,0,1.57.217.217.501.325.785.325s.568-.108.785-.325l3.616-3.615c.102-.102.184-.224.241-.359Z" style="stroke-width: 0px;"/>
+  <path d="M16.005,16.853c.208.299.549.478.913.478h.101c.588,0,1.024-.458,1.058-1.037l1.232-3.277h5.337l1.236,3.286c.046.575.569,1.028,1.155,1.028.364,0,.706-.179.913-.478s.255-.682.126-1.023l-4.497-11.958c-.163-.434-.576-.72-1.039-.72h-1.124c-.462,0-.876.286-1.039.72l-4.498,11.958c-.128.34-.081.723.126,1.023ZM21.977,5.922l1.834,4.875h-3.667l1.833-4.875Z" style="stroke-width: 0px;"/>
+  <path d="M8.418,16.611c.163.434.577.72,1.039.72h1.125c.462,0,.877-.286,1.039-.72l4.497-11.958c.128-.34.029-.723-.178-1.023-.208-.299-.601-.478-.965-.478-.59,0-1.025.461-1.057,1.042l-3.899,10.367-3.909-10.397c-.054-.567-.569-1.013-1.15-1.013-.364,0-.705.179-.913.478-.207.299-.254.682-.126,1.023l4.497,11.958Z" style="stroke-width: 0px;"/>
 </svg>

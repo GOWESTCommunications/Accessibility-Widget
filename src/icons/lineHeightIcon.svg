@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <g id="Gruppe_48" data-name="Gruppe 48">
-    <g id="Pfad_35-2" data-name="Pfad 35-2">
-      <path d="M9.165,6.453v19.034" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Pfad_38-2" data-name="Pfad 38-2">
-      <path d="M5.165,22l4,4,4-4" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Pfad_39-2" data-name="Pfad 39-2">
-      <path d="M5.165,10l4-4,4,4" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-  </g>
-  <g id="text-align-left">
-    <g id="Linie_1-2" data-name="Linie 1-2">
-      <line x1="16.835" y1="8" x2="26.835" y2="8" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Linie_3-2" data-name="Linie 3-2">
-      <line x1="16.835" y1="16" x2="26.835" y2="16" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Linie_5-2" data-name="Linie 5-2">
-      <line x1="16.835" y1="24" x2="26.835" y2="24" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-  </g>
+  <path d="M12.067,10.123c.217.217.501.325.785.325s.568-.108.785-.325c.434-.434.434-1.136,0-1.57l-4.441-4.441c-.434-.434-1.136-.434-1.57,0l-4.441,4.441c-.434.434-.434,1.136,0,1.57s1.136.434,1.57,0l2.546-2.546v16.846l-2.546-2.546c-.434-.434-1.136-.434-1.57,0s-.434,1.136,0,1.57l4.441,4.441c.217.217.501.325.785.325s.568-.108.785-.325l4.441-4.441c.434-.434.434-1.136,0-1.57s-1.136-.434-1.57,0l-2.546,2.546V7.577l2.546,2.546Z" style="stroke-width: 0px;"/>
+  <path d="M16.927,8.228h11.104c.614,0,1.11-.497,1.11-1.11s-.497-1.11-1.11-1.11h-11.104c-.613,0-1.11.497-1.11,1.11s.497,1.11,1.11,1.11Z" style="stroke-width: 0px;"/>
+  <path d="M28.031,14.89h-11.104c-.613,0-1.11.497-1.11,1.11s.497,1.11,1.11,1.11h11.104c.614,0,1.11-.497,1.11-1.11s-.497-1.11-1.11-1.11Z" style="stroke-width: 0px;"/>
+  <path d="M28.031,23.772h-11.104c-.613,0-1.11.497-1.11,1.11s.497,1.11,1.11,1.11h11.104c.614,0,1.11-.497,1.11-1.11s-.497-1.11-1.11-1.11Z" style="stroke-width: 0px;"/>
 </svg>

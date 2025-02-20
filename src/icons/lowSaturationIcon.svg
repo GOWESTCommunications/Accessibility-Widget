@@ -1,23 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <g id="Gruppe_53" data-name="Gruppe 53">
-    <g id="Linie_1" data-name="Linie 1">
-      <line x1="16.5" y1="10.5" x2="21" y2="10.5" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Linie_6" data-name="Linie 6">
-      <line x1="16.5" y1="14.5" x2="23.946" y2="14.5" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Linie_3" data-name="Linie 3">
-      <line x1="16.5" y1="18.5" x2="24.446" y2="18.5" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Linie_5" data-name="Linie 5">
-      <line x1="16.5" y1="22.5" x2="24" y2="22.5" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Pfad_58" data-name="Pfad 58">
-      <path d="M7,18.467c0-5.851,9-13.467,9-13.467,0,0,9,7.6,9,13.467,0,5.44-4.613,8.533-9,8.533s-9-3.093-9-8.533Z" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-    <g id="Linie_32" data-name="Linie 32">
-      <line x1="16" y1="26.136" x2="16" y2="6.136" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-    </g>
-  </g>
+  <path d="M25.917,23.594c.742-1.398,1.186-3.02,1.186-4.855,0-1.5-.481-3.07-1.213-4.616-.04-.201-.121-.385-.254-.531-2.783-5.416-8.599-10.382-8.921-10.653-.414-.35-1.019-.348-1.433,0-.424.359-10.386,8.87-10.386,15.801,0,6.626,5.646,10.585,11.104,10.585,3.876,0,7.835-2.004,9.811-5.534.04-.064.08-.124.106-.196ZM22.899,13.224h-5.789v-2.221h4.238c.554.717,1.078,1.463,1.551,2.221ZM17.11,15.445h6.972c.327.751.572,1.497.697,2.221h-7.669v-2.221ZM17.11,19.886h7.694c-.102.806-.313,1.545-.609,2.221h-7.085v-2.221ZM19.487,8.782h-2.376v-2.466c.693.672,1.521,1.515,2.376,2.466ZM7.117,18.739c0-4.279,4.988-9.716,7.772-12.419v20.711c-3.947-.457-7.772-3.326-7.772-8.292ZM17.11,27.031v-2.703h5.611c-1.472,1.548-3.523,2.462-5.611,2.703Z" style="stroke-width: 0px;"/>
 </svg>

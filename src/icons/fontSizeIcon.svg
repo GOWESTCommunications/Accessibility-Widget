@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <g id="text-size">
-    <g id="Gruppe_8" data-name="Gruppe 8">
-      <g id="Pfad_23" data-name="Pfad 23">
-        <path d="M17.572,18.75h7.857" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-      </g>
-      <g id="Pfad_24" data-name="Pfad 24">
-        <path d="M6.094,20.321h5.7" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-      </g>
-      <g id="Pfad_25" data-name="Pfad 25">
-        <path d="M16.076,23.465h-.076l4.889-14.929h1.222l4.889,14.929h-.071" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-      </g>
-      <g id="Pfad_26" data-name="Pfad 26">
-        <path d="M5.077,23.464h-.077l3.492-10.215h.873l3.492,10.215h-.08" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
-      </g>
-    </g>
-  </g>
+  <path d="M29.164,23.977l-5.428-16.577c-.135-.411-.518-.689-.95-.689h-1.357c-.433,0-.815.278-.95.689l-5.428,16.577c-.1.304-.047.638.141.898.188.259.489.413.81.413h.084c.542,0,.942-.431.957-.968l1.397-4.266h7.336l1.401,4.278c.024.532.5.957,1.038.957.32,0,.622-.154.81-.413.188-.26.24-.593.141-.898ZM19.094,18.054l3.013-9.202,3.013,9.202h-6.026Z" style="stroke-width: 0px;"/>
+  <path d="M12.266,20.481c-.012-.035-.02-.07-.035-.103l-2.651-7.756c-.138-.405-.519-.677-.946-.677h-.969c-.428,0-.808.272-.946.677l-3.877,11.342c-.104.305-.055.642.133.905s.491.418.813.418h.085c.538,0,.936-.424.957-.956l.866-2.534h4.908l.865,2.529c.022.534.504.961,1.043.961.323,0,.626-.156.813-.418s.237-.6.133-.905l-1.191-3.484ZM6.378,19.798l1.77-5.178,1.77,5.178h-3.54Z" style="stroke-width: 0px;"/>
 </svg>
