@@ -1,3 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <path d="m19 19-7-8v8H5l7-8V5h7m0-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g id="Gruppe_51" data-name="Gruppe 51">
+    <g id="Differenzmenge_4" data-name="Differenzmenge 4">
+      <path d="M15.214,27H5.786c-.443-.01-.795-.378-.786-.821V6.822c-.009-.444.342-.812.786-.822h9.428c.444.01.795.378.786.822v8.678l-9.537,9.97h9.537v.708c.009.444-.342.812-.786.822Z" style="stroke-width: 0px;"/>
+    </g>
+    <g id="Pfad_63" data-name="Pfad 63">
+      <path d="M15.999,15.5v10.5h10.509l-10.509-10.5Z" style="stroke-width: 0px;"/>
+    </g>
+    <g id="Rechteck_28" data-name="Rechteck 28">
+      <rect x="5" y="5" width="22" height="22" rx="2" ry="2" style="fill: none; stroke-width: 0px;"/>
+      <rect x="6" y="6" width="20" height="20" rx="1" ry="1" style="fill: none; stroke: #000; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+  </g>
 </svg>

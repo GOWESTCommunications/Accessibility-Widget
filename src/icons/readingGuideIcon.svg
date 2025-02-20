@@ -1,3 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54A13.15 13.15 0 0 0 3 8v11c3.5 0 6.64 1.35 9 3.54A13.15 13.15 0 0 1 21 19V8c-3.5 0-6.64 1.35-9 3.54Z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g id="Gruppe_52" data-name="Gruppe 52">
+    <g id="Linie_29" data-name="Linie 29">
+      <line x1="10.657" y1="10.38" x2="18.657" y2="10.38" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Pfad_91" data-name="Pfad 91">
+      <path d="M10.657,13.38h2" style="fill: none; stroke: #000; stroke-linecap: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Linie_30" data-name="Linie 30">
+      <line x1="10.657" y1="16.38" x2="12.657" y2="16.38" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Gruppe_28" data-name="Gruppe 28">
+      <g id="Linie_23" data-name="Linie 23">
+        <line x1="17.535" y1="21.891" x2="17.789" y2="23.674" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+      </g>
+      <g id="Pfad_86" data-name="Pfad 86">
+        <path d="M26.298,25.955l.045-4.181c.011-.977-.76-1.785-1.737-1.819l-4.955-.187-.589-4.157c-.094-.656-.702-1.112-1.357-1.018h0c-.656.094-1.112.702-1.018,1.357l.628,4.395.221,1.546-1.188.17c-.656.094-1.112.702-1.018,1.357l.244,1.72c.116.809.504,1.555,1.1,2.115l1.454,1.366" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+      </g>
+    </g>
+    <g id="Pfad_90" data-name="Pfad 90">
+      <path d="M12.034,23.38h-4.377c-1.105,0-2-.895-2-2V5.38c0-1.105.895-2,2-2h14c1.105,0,2,.895,2,2v10.8" style="fill: none; stroke: #000; stroke-linecap: round; stroke-width: 2px;"/>
+    </g>
+  </g>
 </svg>

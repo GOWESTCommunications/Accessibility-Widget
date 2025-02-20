@@ -1,3 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <path d="M22 3v18h-2V3h2M4 3v18H2V3h2m6 10.7h4l-2-5.4-2 5.4M11.2 6h1.7l4.7 12h-2l-.9-2.6H9.4L8.5 18h-2l4.7-12Z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g id="text-tracking">
+    <g id="Pfad_34" data-name="Pfad 34">
+      <path d="M18.499,12.314h5.565" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Pfad_35" data-name="Pfad 35">
+      <path d="M5.415,23.314h21.169" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Pfad_36" data-name="Pfad 36">
+      <path d="M16.918,16.199h-.091l4.05-10.77h1.013l4.05,10.77h-.087" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Pfad_37" data-name="Pfad 37">
+      <path d="M6.137,5.429h-.079l4.05,10.77h1.013l4.05-10.77h-.094" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Pfad_38" data-name="Pfad 38">
+      <path d="M23.327,26.571l3.257-3.257-3.257-3.257" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Pfad_39" data-name="Pfad 39">
+      <path d="M8.672,26.571l-3.257-3.257,3.257-3.257" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+  </g>
 </svg>

@@ -1,3 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <path d="M21 22H3v-2h18v2m0-18H3V2h18v2m-11 9.7h4l-2-5.4-2 5.4M11.2 6h1.7l4.7 12h-2l-.9-2.6H9.4L8.5 18h-2l4.7-12Z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g id="Gruppe_48" data-name="Gruppe 48">
+    <g id="Pfad_35-2" data-name="Pfad 35-2">
+      <path d="M9.165,6.453v19.034" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Pfad_38-2" data-name="Pfad 38-2">
+      <path d="M5.165,22l4,4,4-4" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Pfad_39-2" data-name="Pfad 39-2">
+      <path d="M5.165,10l4-4,4,4" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+  </g>
+  <g id="text-align-left">
+    <g id="Linie_1-2" data-name="Linie 1-2">
+      <line x1="16.835" y1="8" x2="26.835" y2="8" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Linie_3-2" data-name="Linie 3-2">
+      <line x1="16.835" y1="16" x2="26.835" y2="16" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+    <g id="Linie_5-2" data-name="Linie 5-2">
+      <line x1="16.835" y1="24" x2="26.835" y2="24" style="fill: none; stroke: #000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    </g>
+  </g>
 </svg>

@@ -1,3 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <path d="M18 12c0-4.5-1.92-8.74-6-10a10 10 0 0 0 0 20c4.08-1.26 6-5.5 6-10Z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g id="Gruppe_50" data-name="Gruppe 50">
+    <g id="Pfad_105-2" data-name="Pfad 105-2">
+      <path d="M16,28c6.627,0,12-5.373,12-12s-5.373-12-12-12-12,5.373-12,12,5.373,12,12,12Z" style="fill: none; stroke-width: 0px;"/>
+      <path d="M16,26c5.514,0,10-4.486,10-10s-4.486-10-10-10-10,4.486-10,10,4.486,10,10,10M16,28c-6.627,0-12-5.373-12-12s5.373-12,12-12,12,5.373,12,12-5.373,12-12,12Z" style="stroke-width: 0px;"/>
+    </g>
+    <g id="Pfad_106-2" data-name="Pfad 106-2">
+      <path d="M16.101,27.73c6.553,0,11.865-5.312,11.865-11.865s-5.312-11.865-11.865-11.865c-.123-.1-.146,23.681,0,23.73Z" style="stroke-width: 0px;"/>
+    </g>
+  </g>
 </svg>

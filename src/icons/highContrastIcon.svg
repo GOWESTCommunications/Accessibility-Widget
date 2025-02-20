@@ -1,3 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1 17.93a8 8 0 0 1 0-15.86v15.86zm2-15.86a8 8 0 0 1 2.87.93H13v-.93zM13 7h5.24c.25.31.48.65.68 1H13V7zm0 3h6.74c.08.33.15.66.19 1H13v-1zm0 9.93V19h2.87a8 8 0 0 1-2.87.93zM18.24 17H13v-1h5.92c-.2.35-.43.69-.68 1zm1.5-3H13v-1h6.93a8.4 8.4 0 0 1-.19 1z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g id="Gruppe_49" data-name="Gruppe 49">
+    <g id="Pfad_105" data-name="Pfad 105">
+      <path d="M16,28c6.627,0,12-5.373,12-12s-5.373-12-12-12-12,5.373-12,12,5.373,12,12,12Z" style="fill: none; stroke-width: 0px;"/>
+      <path d="M16,26c5.514,0,10-4.486,10-10s-4.486-10-10-10-10,4.486-10,10,4.486,10,10,10M16,28c-6.627,0-12-5.373-12-12s5.373-12,12-12,12,5.373,12,12-5.373,12-12,12Z" style="stroke-width: 0px;"/>
+    </g>
+    <g id="Pfad_106" data-name="Pfad 106">
+      <path d="M16,24c4.418,0,8-3.582,8-8s-3.582-8-8-8c-.083-.07-.1,15.967,0,16Z" style="stroke-width: 0px;"/>
+    </g>
+  </g>
 </svg>
