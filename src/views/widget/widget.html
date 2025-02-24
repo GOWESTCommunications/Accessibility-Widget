@@ -23,7 +23,7 @@
     .asw-menu {
         position: fixed;
         left: 20px;
-        top: 20px;
+        bottom: 20px;
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
         opacity: 1;
         transition: .3s;
@@ -33,9 +33,12 @@
         width: 500px;
         line-height: 1;
         font-size: 16px;
-        height: calc(100% - 40px);
+        max-height: calc(100% - 40px);
+        height: fit-content;
         letter-spacing: 0.015em;
         border-radius: 12px;
+        display: flex;
+        flex-direction: column;
     }
 
     .asw-menu * {
@@ -56,6 +59,7 @@
         height: 60px;
         font-weight: 700 !important;
         background-color: var(--primary-color) !important;
+        flex-shrink: 0;
     }
 
     .asw-menu-title {
@@ -256,9 +260,10 @@
     }
 
     .asw-menu-content {
-        overflow: scroll;
-        max-height: calc(100% - 60px);
+        overflow: auto;
+        height: auto;
         padding: 20px 0 15px;
+        flex-grow: 1;
     }
 
     .asw-adjust-font {
