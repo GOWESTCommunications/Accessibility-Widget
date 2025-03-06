@@ -12,7 +12,7 @@ export const readableFontConfig: IToolConfig = {
     css: `
         @font-face {
             font-family: OpenDyslexic3;
-            src: url("https://website-widgets.pages.dev/fonts/OpenDyslexic3-Regular.woff") format("woff"), url("https://website-widgets.pages.dev/fonts/OpenDyslexic3-Regular.ttf") format("truetype");
+            src: url("https://tools.go-west.at/fonts/OpenDyslexic3-Regular.woff2") format("woff2");
         }
     `
 }

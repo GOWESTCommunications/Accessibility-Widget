@@ -65,7 +65,7 @@ export function injectToolCSS(config: IToolConfig) {
         enable=false
     } = config;
 
-    let toolId = `asw-${ id }`
+    let toolId = `go-aw-${ id }`
 
     if(enable) {
         let css = generateCSSFromConfig(config);

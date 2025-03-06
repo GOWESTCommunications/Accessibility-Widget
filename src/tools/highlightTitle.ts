@@ -7,7 +7,7 @@ export const highlightTitleConfig: IToolConfig = {
     selector: `html`,
     childrenSelector: HEADER_SELECTORS,
     styles: {
-        'outline': '2px solid #0048ff',
+        'outline': '2px solid rgb(0, 150, 255)',
         'outline-offset': '2px'
     }
 }

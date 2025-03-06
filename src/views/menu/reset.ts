@@ -6,5 +6,5 @@ export default function reset() {
 
     runAccessibility();
 
-    document?.querySelectorAll(".asw-selected")?.forEach(el => el?.classList?.remove("asw-selected"))
+    document?.querySelectorAll(".go-aw-selected")?.forEach(el => el?.classList?.remove("go-aw-selected"))
 }

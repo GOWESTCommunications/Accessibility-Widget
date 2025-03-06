@@ -21,53 +21,53 @@ module.exports = {
     },
   },
   module: {
-      rules: [
-        {
-          test: /\.ts$/,
-          use: 'ts-loader',
-          exclude: /node_modules/
+    rules: [
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+        options: {
+          minimize: true,
         },
-        {
-          test: /\.html$/i,
-          loader: 'html-loader',
-          options: {
-            minimize: true,
+      },
+      {
+        test: /\.css$/i,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              injectType: 'singletonStyleTag',
+            },
           },
-        },
-        {
-            test: /\.css$/i,
-            use: [
-              {
-                  loader: 'style-loader',
-                  options: {
-                  injectType: 'singletonStyleTag',
-                  },
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [['autoprefixer']],
               },
-              MiniCssExtractPlugin.loader,
-              {
-                  loader: 'css-loader',
-                  options: {
-                    importLoaders: 1,
-                  },
-              },
-              {
-                  loader: 'postcss-loader',
-                  options: {
-                  postcssOptions: {
-                      plugins: [['autoprefixer']],
-                  },
-                  },
-              },
-              'raw-loader',
-            ],
-        },
-        {
-          test: /\.svg$/,
-          use: [
-            "raw-loader"
-          ]
-        }
-      ],
+            },
+          },
+          'raw-loader',
+        ],
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          "raw-loader"
+        ]
+      }
+    ],
   },
   optimization: {
     minimizer: [new TerserPlugin({
@@ -80,7 +80,7 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
     new webpack.BannerPlugin({
-      banner: `Sienna Accessibility Widget v${packageJson.version}
+      banner: `GO.WEST Accessibility Widget v${packageJson.version}
 (c) ${new Date().getFullYear()} ${packageJson.author}
 License: ${packageJson.license}
 Home Page : ${packageJson.homepage}

@@ -20,7 +20,7 @@ export default function renderFilter() {
 
     addStylesheet({
         css, 
-        id: 'asw-filter-style'
+        id: 'go-aw-filter-style'
     });
     
     document.documentElement.classList.toggle("aws-filter", Boolean(contrast));

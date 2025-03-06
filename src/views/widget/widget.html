@@ -1,26 +1,22 @@
 <style>
-    :root{
-        --primary-color: rgb(0, 129, 180);
-    }
-
     *:focus {
-        outline: solid 2px var(--primary-color) !important; 
+        outline: solid 2px var(--go-aw-primary-color) !important; 
         outline-offset: -2px;
     }
     *:focus:not(:focus-visible) {
         outline: none !important;
     }
 
-    .asw-menu-header *:focus {
+    .go-aw-menu-header *:focus {
         outline: solid 2px white !important; 
         outline-offset: 2px;
     }
 
-    .asw-menu-header *:focus:not(:focus-visible) {
+    .go-aw-menu-header *:focus:not(:focus-visible) {
         outline: none !important;
     }
 
-    .asw-menu {
+    .go-aw-menu {
         position: fixed;
         left: 20px;
         bottom: 20px;
@@ -36,21 +32,21 @@
         max-height: calc(100% - 40px);
         height: fit-content;
         letter-spacing: 0.015em;
-        border-radius: 12px;
+        border-radius: var(--go-aw-border-radius);
         display: flex;
         flex-direction: column;
     }
 
-    .asw-menu * {
+    .go-aw-menu * {
         color: #000 !important;
-        font-family: inherit;
+        font-family: var(--go-aw-font-family);
         padding: 0;
         margin: 0;
         line-height: 1 !important;
         letter-spacing: normal !important;
     }
 
-    .asw-menu-header {
+    .go-aw-menu-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -58,17 +54,18 @@
         padding-right: 18px;
         height: 60px;
         font-weight: 700 !important;
-        background-color: var(--primary-color) !important;
+        background: var(--go-aw-gradient-color) no-repeat bottom right !important;
+        background-size: 200%, 100% !important;
         flex-shrink: 0;
     }
 
-    .asw-menu-title {
+    .go-aw-menu-title {
         font-size: 16px !important;
         color: #fff !important;
     }
     
-    .asw-menu-header svg {
-        fill: var(--primary-color) !important;
+    .go-aw-menu-header svg {
+        fill: var(--go-aw-primary-color) !important;
         width: 24px !important;
         height: 24px !important;
         min-width: 24px !important;
@@ -77,11 +74,11 @@
         max-height: 24px !important;
     }
 
-    .asw-menu-header > div {
+    .go-aw-menu-header > div {
         display: flex;
     }
 
-    .asw-menu-header div[role="button"] {
+    .go-aw-menu-header div[role="button"] {
         background: white !important;
         cursor: pointer;
         border-radius: 50%;
@@ -93,36 +90,36 @@
         justify-content: center;
     }
 
-    .asw-menu-header div[role="button"]:hover {
+    .go-aw-menu-header div[role="button"]:hover {
         opacity: 0.8;
     }
 
-    .asw-card {
+    .go-aw-card {
         margin: 0 18px 1rem;
     }
 
     @media only screen and (max-width: 420px) {
-        .asw-card {
+        .go-aw-card {
             margin: 0 18px 0.5rem;
         }
     }
 
-    .asw-card-title {
+    .go-aw-card-title {
         font-size: 14px !important;
         padding: 15px 0;
         font-weight: 600 !important;
         opacity: 0.8;
     }
 
-    .asw-items {
+    .go-aw-items {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
     }
 
-    .asw-btn {
+    .go-aw-btn {
         aspect-ratio: 6 / 5;
-        border-radius: 12px;
+        border-radius: var(--go-aw-border-radius);
         padding: 0 15px;
         display: flex;
         align-items: center;
@@ -139,33 +136,34 @@
         gap: 10px;
         position: relative;
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+        background-clip: border-box !important;
     }
 
-    .asw-btn .asw-translate,
-    .asw-adjust-font .asw-label div {
+    .go-aw-btn .go-aw-translate,
+    .go-aw-adjust-font .go-aw-label div {
         font-size: 14px !important;
         font-weight: 600 !important;
     }
 
-    .asw-plus,
-    .asw-minus {
+    .go-aw-plus,
+    .go-aw-minus {
         background-color: #EFEFEF !important;
         border: 2px solid transparent;
         transition: border .2s ease;
     }
 
     
-    .asw-plus:hover,
-    .asw-minus:hover {
-        border-color: var(--primary-color) !important;
+    .go-aw-plus:hover,
+    .go-aw-minus:hover {
+        border-color: var(--go-aw-primary-color) !important;
     }
 
-    .asw-amount {
+    .go-aw-amount {
         font-size: 18px !important;
         font-weight: 600 !important;
     }
 
-    .asw-adjust-font svg {
+    .go-aw-adjust-font svg {
         width: 24px !important;
         height: 24px !important;
         min-width: 24px !important;
@@ -174,8 +172,8 @@
         max-height: 24px !important;
     }
     
-    .asw-label svg,
-    .asw-btn svg {
+    .go-aw-label svg,
+    .go-aw-btn svg {
         width: 32px !important;
         height: 32px !important;
         min-width: 32px !important;
@@ -184,32 +182,32 @@
         max-height: 32px !important;
     }
 
-    .asw-btn:hover {
-        border-color: var(--primary-color) !important;
+    .go-aw-btn:hover {
+        border-color: var(--go-aw-primary-color) !important;
     }
 
-    .asw-btn.asw-selected {
-        background-color: var(--primary-color) !important;
+    .go-aw-btn.go-aw-selected {
+        background: var(--go-aw-primary-color) !important;
     }
 
-    .asw-btn.asw-selected svg,
-    .asw-btn.asw-selected span {
+    .go-aw-btn.go-aw-selected svg,
+    .go-aw-btn.go-aw-selected span {
         fill: white !important;
         color: white !important;
     }
 
-    html.aws-filter .asw-btn.asw-selected svg {
+    html.aws-filter .go-aw-btn.go-aw-selected svg {
         background-color: transparent !important;
     }
 
-    .asw-menu .asw-select {
+    .go-aw-menu .go-aw-select {
         width: 100%;
         padding: 0.5em 3.5em 0.5em 1em;
         font-size: 16px;
-        font-family: inherit;
+        font-family: var(--go-aw-font-family);
         font-weight: 600;
         display: inline-block;
-        border-radius: 12px;
+        border-radius: var(--go-aw-border-radius);
         background: #fff;
         border: none;
         min-height: 45px;
@@ -239,11 +237,11 @@
         cursor: pointer;
     }
 
-    .asw-menu .asw-select:hover {
-        border-color: var(--primary-color) !important;
+    .go-aw-menu .go-aw-select:hover {
+        border-color: var(--go-aw-primary-color) !important;
     }
 
-    .asw-menu .asw-select:focus {
+    .go-aw-menu .go-aw-select:focus {
         background-image:
                 linear-gradient(45deg, black 50%, transparent 50%),
                 linear-gradient(135deg, transparent 50%, black 50%);
@@ -259,28 +257,28 @@
         outline-offset: -2px;
     }
 
-    .asw-menu-content {
+    .go-aw-menu-content {
         overflow: auto;
         height: auto;
         padding: 20px 0 15px;
         flex-grow: 1;
     }
 
-    .asw-adjust-font {
+    .go-aw-adjust-font {
         background: #fff;
         padding: 20px;
         margin-bottom: 20px;
-        border-radius: 12px;
+        border-radius: var(--go-aw-border-radius);
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     }
 
-    .asw-adjust-font .asw-label {
+    .go-aw-adjust-font .go-aw-label {
         display: flex;
         justify-content: flex-start;
         gap: 8px;
     }
 
-    .asw-adjust-font > div {
+    .go-aw-adjust-font > div {
         display: flex;
         justify-content: space-between;
         margin-top: 12px;
@@ -288,11 +286,11 @@
         font-size: 15px;
     }
 
-    .asw-adjust-font .asw-label div {
+    .go-aw-adjust-font .go-aw-label div {
         font-size: 15px !important;
     }
 
-    .asw-adjust-font div[role="button"] {
+    .go-aw-adjust-font div[role="button"] {
         background: #EFEFEF !important;
         border-radius: 50%;
         width: 36px;
@@ -303,7 +301,7 @@
         cursor: pointer;
     }
 
-    .asw-overlay {
+    .go-aw-overlay {
         position: fixed;
         top: 0;
         left: 0;
@@ -328,7 +326,7 @@
         gap: 8px;
         font-weight: 600 !important;
         flex-direction: column;
-        border-radius: 12px;
+        border-radius: var(--go-aw-border-radius);
         padding: 8px 15px;
     }
 
@@ -341,7 +339,7 @@
 
     .license a {
         text-decoration: none !important;
-        border-radius: 12px;
+        border-radius: var(--go-aw-border-radius);
         padding: 2px 8px;
         color: #aaaaaa !important;
     }
@@ -351,20 +349,20 @@
     }
 
     @media only screen and (max-width: 560px) {
-        .asw-menu {
+        .go-aw-menu {
             width: calc(100% - 40px);
         }
     }
 
     @media only screen and (max-width: 420px) {
-        .asw-items {
+        .go-aw-items {
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 0.5rem;
         }
     }
 
-    .asw-widget,
-    .asw-menu {
+    .go-aw-widget,
+    .go-aw-menu {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -373,12 +371,12 @@
         -webkit-font-smoothing: antialiased;
     }
 
-    .asw-widget *,
-    .asw-menu * {
+    .go-aw-widget *,
+    .go-aw-menu * {
         box-sizing: border-box !important;
     }
 
-    .asw-menu-btn {
+    .go-aw-menu-btn {
         position: fixed;
         z-index: 500000;
         left: 30px;
@@ -393,31 +391,31 @@
         display: flex;
         cursor: pointer;
         text-decoration: none !important;
-        background: var(--primary-color) !important;
+        background: var(--go-aw-gradient-color) !important;
         outline-offset: 2px;
     }
 
-    .asw-menu-btn svg {
-        width: 36px;
-        height: 36px;
-        min-height: 36px;
-        min-width: 36px;
-        max-width: 36px;
-        max-height: 36px;
+    .go-aw-menu-btn svg {
+        width: 32px;
+        height: 32px;
+        min-height: 32px;
+        min-width: 32px;
+        max-width: 32px;
+        max-height: 32px;
         background: transparent !important;
     }
 
-    .asw-menu-btn:hover {
+    .go-aw-menu-btn:hover {
         transform: scale(1.05);
     }
 
     @media only screen and (max-width: 768px) {
-        .asw-menu-btn {
+        .go-aw-menu-btn {
             width: 42px;
             height: 42px;
         }
 
-        .asw-menu-btn svg {
+        .go-aw-menu-btn svg {
             width: 26px;
             height: 26px;
             min-height: 26px;
@@ -427,8 +425,8 @@
         }
     }
 </style>
-<div class="gowest-accessibility-widget asw-widget">
-    <a href="https://go-west.at" target="_blank" class="asw-menu-btn" title="Open Accessibility Menu" role="button" aria-expanded="false">
-        <svg xmlns="http://www.w3.org/2000/svg" style="fill:white;" viewBox="0 0 24 24" width="30px" height="30px" ><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+<div class="go-aw-widget">
+    <a href="https://go-west.at" target="_blank" class="go-aw-menu-btn" title="Open Accessibility Menu" role="button" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#EEEEEE" viewBox="0 0 256 256"><path d="M100,36a28,28,0,1,1,28,28A28,28,0,0,1,100,36ZM227.6,92.57A15.7,15.7,0,0,0,212,80H44a16,16,0,0,0-6.7,30.53l.06,0,53.89,23.73-21.92,83.3a16,16,0,0,0,7.9,20.91A15.83,15.83,0,0,0,84,240a16,16,0,0,0,14.44-9.06L128,180l29.58,51a16,16,0,0,0,29.07-13.35l-21.92-83.3,54-23.76A15.7,15.7,0,0,0,227.6,92.57Z"></path></svg>
     </a>
 </div>

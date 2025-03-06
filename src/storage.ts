@@ -3,7 +3,7 @@ import { ISettings } from "./types/ISettings";
 
 let settings: ISettings = {};
 
-export const COOKIE_KEY = "asw";
+export const COOKIE_KEY = "go-aw";
 
 export function saveState(payload): ISettings {
     const newSettings = {

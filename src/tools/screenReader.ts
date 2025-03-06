@@ -68,7 +68,7 @@ function speakText(text) {
 export default function screenReader(enable = false) {
   return;
   if (enable) {
-    (window as any).__asw__onClickScreenReader = (event) => {
+    (window as any)._gowest_onClickScreenReader = (event) => {
       var clickedElement = event.target;
 
       if (!["BODY", "HEAD", "HTML"].includes(clickedElement.nodeName)) {
@@ -78,11 +78,11 @@ export default function screenReader(enable = false) {
       }
     }
 
-    document.addEventListener('click', (window as any).__asw__onClickScreenReader);
+    document.addEventListener('click', (window as any)._gowest_onClickScreenReader);
   } else {
-    if ((window as any).__asw__onClickScreenReader) {
-      document.removeEventListener('click', (window as any).__asw__onClickScreenReader);
-      delete (window as any).__asw__onClickScreenReader;
+    if ((window as any)._gowest_onClickScreenReader) {
+      document.removeEventListener('click', (window as any)._gowest_onClickScreenReader);
+      delete (window as any)._gowest_onClickScreenReader;
     }
   }
 }

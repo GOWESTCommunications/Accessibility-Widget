@@ -30,7 +30,7 @@ export function renderMenu({
     const $container: HTMLElement = document.createElement("div");
     $container.innerHTML = template;
 
-    const $menu: HTMLElement = $container.querySelector(".asw-menu");
+    const $menu: HTMLElement = $container.querySelector(".go-aw-menu");
 
     if(position?.includes("right")) {
         $menu.style.right = '0px';
@@ -38,21 +38,21 @@ export function renderMenu({
     }
 
     $menu.querySelector(".content").innerHTML = renderButtons(ContentButtons);
-    $menu.querySelector(".tools").innerHTML = renderButtons(ToolButtons, 'asw-tools');
-    $menu.querySelector(".contrast").innerHTML = renderButtons(FilterButtons, 'asw-filter');
+    $menu.querySelector(".tools").innerHTML = renderButtons(ToolButtons, 'go-aw-tools');
+    $menu.querySelector(".contrast").innerHTML = renderButtons(FilterButtons, 'go-aw-filter');
 
-    $container.querySelectorAll('.asw-menu-close, .asw-overlay').forEach((el: HTMLElement) => {
+    $container.querySelectorAll('.go-aw-menu-close, .go-aw-overlay').forEach((el: HTMLElement) => {
         el.addEventListener('click', () => {
             toggle($container, false)
         });
     })
 
-    $menu.querySelectorAll(".asw-adjust-font div[role='button']").forEach((el: HTMLElement) => {
+    $menu.querySelectorAll(".go-aw-adjust-font div[role='button']").forEach((el: HTMLElement) => {
         el.addEventListener("click", () => {
             const margin = 0.1;
 
             let fontSize = getState("fontSize") ?? 1;
-            if(el.classList.contains('asw-minus')) {
+            if(el.classList.contains('go-aw-minus')) {
                 fontSize -= margin;
             } else {
                 fontSize += margin;
@@ -68,15 +68,15 @@ export function renderMenu({
         });
     });
 
-    $menu.querySelectorAll(".asw-btn").forEach((el: HTMLElement) => {
+    $menu.querySelectorAll(".go-aw-btn").forEach((el: HTMLElement) => {
         el.addEventListener("click", () => {
             let key = el.dataset.key;
 
-            let isSelected = !el.classList.contains("asw-selected");
+            let isSelected = !el.classList.contains("go-aw-selected");
 
-            if(el.classList.contains('asw-filter')) {
-                $menu.querySelectorAll('.asw-filter').forEach((el: HTMLElement) => {
-                    el.classList.remove('asw-selected');
+            if(el.classList.contains('go-aw-filter')) {
+                $menu.querySelectorAll('.go-aw-filter').forEach((el: HTMLElement) => {
+                    el.classList.remove('go-aw-selected');
                 });
 
                 saveState({
@@ -84,12 +84,12 @@ export function renderMenu({
                 });
 
                 if(isSelected) {
-                    el.classList.add('asw-selected');
+                    el.classList.add('go-aw-selected');
                 }
 
                 renderFilter();
             } else {
-                el.classList.toggle('asw-selected', isSelected);
+                el.classList.toggle('go-aw-selected', isSelected);
 
                 saveState({
                     [key]: isSelected
@@ -100,7 +100,7 @@ export function renderMenu({
         });
     });
 
-    $menu.querySelector('.asw-menu-reset')?.addEventListener('click', () => {
+    $menu.querySelector('.go-aw-menu-reset')?.addEventListener('click', () => {
         reset();
     });
 
@@ -110,10 +110,10 @@ export function renderMenu({
     let fontSize = Number(settings?.states?.fontSize) || 1;
 
     if(fontSize != 1) {
-        $menu.querySelector(".asw-amount").innerHTML = `${ fontSize * 100 }%`;
+        $menu.querySelector(".go-aw-amount").innerHTML = `${ fontSize * 100 }%`;
     }
 
-    let $lang: HTMLSelectElement = $menu.querySelector("#asw-language");
+    let $lang: HTMLSelectElement = $menu.querySelector("#go-aw-language");
     $lang.innerHTML = LANGUAGES.map((lang: ILanguage) => `<option value="${lang.code}">${lang.label}</option>`).join('');
 
     if(settings.lang !== options.lang) {
@@ -138,7 +138,7 @@ export function renderMenu({
         for(let key in settings.states) {
             if(settings.states[key] && key !== "fontSize") {
                 let selector = key === "contrast" ? settings.states[key] : key;
-                $menu.querySelector(`.asw-btn[data-key="${ selector }"]`)?.classList?.add("asw-selected")
+                $menu.querySelector(`.go-aw-btn[data-key="${ selector }"]`)?.classList?.add("go-aw-selected")
             }
         }
     }

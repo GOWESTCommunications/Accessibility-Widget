@@ -1,4 +1,10 @@
-import sienna from "./sienna";
+import config from "./config";
+
+declare global {
+    interface Window {
+        gowestConfig: any;
+    }
+}
 
 function getDataAttribute(attr: string) {
     attr = `data-asw-${ attr }`;
@@ -6,25 +12,31 @@ function getDataAttribute(attr: string) {
 }
 
 function initializeSienna() {
-    let lang: string = getDataAttribute("lang");
+    let lang: string = navigator?.language;
     let position: string = getDataAttribute("position")
     let offset: string | number[] = getDataAttribute("offset");
 
     if(!lang) {
         lang = document?.querySelector('html')?.getAttribute('lang')?.replace(/[_-].*/, '');
     }
-    if(!lang && typeof navigator !== "undefined" && navigator?.language) {
-        lang = navigator?.language;
+    if(!lang) {
+        getDataAttribute("lang");
     }
 
     if(offset) {
         offset = offset.split(",").map(value => parseInt(value));
     }
 
-    sienna({
-        lang,
+    const gowestConfig = window.gowestConfig;
+    console.log('GO.WEST Config', gowestConfig);
+
+    config({
+        lang, 
         position,
-        offset
+        offset,
+        primaryColor: gowestConfig?.primaryColor,
+        borderRadius: gowestConfig?.borderRadius,
+        fontFamily: gowestConfig?.fontFamily
     });
 }
 

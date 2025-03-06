@@ -2,10 +2,10 @@
 import template from "./widget.html";
 import toggle from "../../utils/toggle";
 import { renderMenu } from "../menu/menu";
-import { ISeinnaSettings } from "../../sienna";
+import { GoAccessibilitySettings } from "../../config";
 import translateMenu from "../menu/translateMenu";
 
-export function renderWidget(options: ISeinnaSettings) {
+export function renderWidget(options: GoAccessibilitySettings) {
     let {
         position = "bottom-left",
         offset=[20,20]
@@ -13,9 +13,9 @@ export function renderWidget(options: ISeinnaSettings) {
 
     const widget: HTMLElement = document.createElement("div");
     widget.innerHTML = template;
-    widget.classList.add("asw-container");
+    widget.classList.add("go-aw-container");
 
-    let $btn: HTMLElement = widget.querySelector(".asw-menu-btn");
+    let $btn: HTMLElement = widget.querySelector(".go-aw-menu-btn");
 
     let offsetX = offset?.[0] ?? 20;
     let offsetY = offset?.[1] ?? 25;
@@ -74,6 +74,10 @@ export function renderWidget(options: ISeinnaSettings) {
     }
 
     Object.assign($btn.style, buttonStyle);
+    widget.style.setProperty('--go-aw-primary-color', options.primaryColor);
+    widget.style.setProperty('--go-aw-gradient-color', options.gradientColor);
+    widget.style.setProperty('--go-aw-border-radius', options.borderRadius + 'px');
+    widget.style.setProperty('--go-aw-font-family', options.fontFamily);
 
     let menu;
     $btn?.addEventListener("click", (event) => {    

@@ -7,7 +7,7 @@ export const highlightLinksConfig: IToolConfig = {
     selector: `html`,
     childrenSelector: LINKS_SELECOTR,
     styles: {
-        'outline': '2px solid #0048ff',
+        'outline': '2px dashed rgb(0, 150, 255)',
         'outline-offset': '2px'
     }
 }
