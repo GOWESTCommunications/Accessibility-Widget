@@ -5,9 +5,9 @@ export default function renderButtons(buttons, btnClass?:string) {
         let x = buttons[i];
 
         _html += `
-            <button class="go-aw-btn ${ btnClass || '' }" type="button" data-key="${ x.key }" title="${ x.label }">
+            <button class="gotools-clarity-btn ${ btnClass || '' }" type="button" data-key="${ x.key }" title="${ x.label }">
                 ${ x.icon }
-                <span class="go-aw-translate">${ x.label }</span>
+                <span class="gotools-clarity-translate">${ x.label }</span>
             </button>
         `;
     }

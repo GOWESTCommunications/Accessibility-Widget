@@ -1,22 +1,22 @@
 <style>
     *:focus {
-        outline: solid 2px var(--go-aw-primary-color) !important; 
+        outline: solid 2px var(--gotools-clarity-primary-color) !important; 
         outline-offset: -2px;
     }
     *:focus:not(:focus-visible) {
         outline: none !important;
     }
 
-    .go-aw-menu-header *:focus {
+    .gotools-clarity-menu-header *:focus {
         outline: solid 2px white !important; 
         outline-offset: 2px;
     }
 
-    .go-aw-menu-header *:focus:not(:focus-visible) {
+    .gotools-clarity-menu-header *:focus:not(:focus-visible) {
         outline: none !important;
     }
 
-    .go-aw-menu {
+    .gotools-clarity-menu {
         position: fixed;
         left: 20px;
         bottom: 20px;
@@ -32,21 +32,21 @@
         max-height: calc(100% - 40px);
         height: fit-content;
         letter-spacing: 0.015em;
-        border-radius: var(--go-aw-border-radius);
+        border-radius: var(--gotools-clarity-border-radius);
         display: flex;
         flex-direction: column;
     }
 
-    .go-aw-menu * {
+    .gotools-clarity-menu * {
         color: #000 !important;
-        font-family: var(--go-aw-font-family);
+        font-family: var(--gotools-clarity-font-family);
         padding: 0;
         margin: 0;
         line-height: 1 !important;
         letter-spacing: normal !important;
     }
 
-    .go-aw-menu-header {
+    .gotools-clarity-menu-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -54,18 +54,18 @@
         padding-right: 18px;
         height: 60px;
         font-weight: 700 !important;
-        background: var(--go-aw-gradient-color) no-repeat bottom right !important;
+        background: var(--gotools-clarity-gradient-color) no-repeat bottom right !important;
         background-size: 200%, 100% !important;
         flex-shrink: 0;
     }
 
-    .go-aw-menu-title {
+    .gotools-clarity-menu-title {
         font-size: 16px !important;
         color: #fff !important;
     }
     
-    .go-aw-menu-header svg {
-        fill: var(--go-aw-primary-color) !important;
+    .gotools-clarity-menu-header svg {
+        fill: var(--gotools-clarity-primary-color) !important;
         width: 24px !important;
         height: 24px !important;
         min-width: 24px !important;
@@ -74,11 +74,11 @@
         max-height: 24px !important;
     }
 
-    .go-aw-menu-header > div {
+    .gotools-clarity-menu-header > div {
         display: flex;
     }
 
-    .go-aw-menu-header div[role="button"] {
+    .gotools-clarity-menu-header div[role="button"] {
         background: white !important;
         cursor: pointer;
         border-radius: 50%;
@@ -90,36 +90,36 @@
         justify-content: center;
     }
 
-    .go-aw-menu-header div[role="button"]:hover {
+    .gotools-clarity-menu-header div[role="button"]:hover {
         opacity: 0.8;
     }
 
-    .go-aw-card {
+    .gotools-clarity-card {
         margin: 0 18px 1rem;
     }
 
     @media only screen and (max-width: 420px) {
-        .go-aw-card {
+        .gotools-clarity-card {
             margin: 0 18px 0.5rem;
         }
     }
 
-    .go-aw-card-title {
+    .gotools-clarity-card-title {
         font-size: 14px !important;
         padding: 15px 0;
         font-weight: 600 !important;
         opacity: 0.8;
     }
 
-    .go-aw-items {
+    .gotools-clarity-items {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
     }
 
-    .go-aw-btn {
+    .gotools-clarity-btn {
         aspect-ratio: 6 / 5;
-        border-radius: var(--go-aw-border-radius);
+        border-radius: var(--gotools-clarity-border-radius);
         padding: 0 15px;
         display: flex;
         align-items: center;
@@ -139,31 +139,31 @@
         background-clip: border-box !important;
     }
 
-    .go-aw-btn .go-aw-translate,
-    .go-aw-adjust-font .go-aw-label div {
+    .gotools-clarity-btn .gotools-clarity-translate,
+    .gotools-clarity-adjust-font .gotools-clarity-label div {
         font-size: 14px !important;
         font-weight: 600 !important;
     }
 
-    .go-aw-plus,
-    .go-aw-minus {
+    .gotools-clarity-plus,
+    .gotools-clarity-minus {
         background-color: #EFEFEF !important;
         border: 2px solid transparent;
         transition: border .2s ease;
     }
 
     
-    .go-aw-plus:hover,
-    .go-aw-minus:hover {
-        border-color: var(--go-aw-primary-color) !important;
+    .gotools-clarity-plus:hover,
+    .gotools-clarity-minus:hover {
+        border-color: var(--gotools-clarity-primary-color) !important;
     }
 
-    .go-aw-amount {
+    .gotools-clarity-amount {
         font-size: 18px !important;
         font-weight: 600 !important;
     }
 
-    .go-aw-adjust-font svg {
+    .gotools-clarity-adjust-font svg {
         width: 24px !important;
         height: 24px !important;
         min-width: 24px !important;
@@ -172,8 +172,8 @@
         max-height: 24px !important;
     }
     
-    .go-aw-label svg,
-    .go-aw-btn svg {
+    .gotools-clarity-label svg,
+    .gotools-clarity-btn svg {
         width: 32px !important;
         height: 32px !important;
         min-width: 32px !important;
@@ -182,32 +182,32 @@
         max-height: 32px !important;
     }
 
-    .go-aw-btn:hover {
-        border-color: var(--go-aw-primary-color) !important;
+    .gotools-clarity-btn:hover {
+        border-color: var(--gotools-clarity-primary-color) !important;
     }
 
-    .go-aw-btn.go-aw-selected {
-        background: var(--go-aw-primary-color) !important;
+    .gotools-clarity-btn.gotools-clarity-selected {
+        background: var(--gotools-clarity-primary-color) !important;
     }
 
-    .go-aw-btn.go-aw-selected svg,
-    .go-aw-btn.go-aw-selected span {
+    .gotools-clarity-btn.gotools-clarity-selected svg,
+    .gotools-clarity-btn.gotools-clarity-selected span {
         fill: white !important;
         color: white !important;
     }
 
-    html.aws-filter .go-aw-btn.go-aw-selected svg {
+    html.aws-filter .gotools-clarity-btn.gotools-clarity-selected svg {
         background-color: transparent !important;
     }
 
-    .go-aw-menu .go-aw-select {
+    .gotools-clarity-menu .gotools-clarity-select {
         width: 100%;
         padding: 0.5em 3.5em 0.5em 1em;
         font-size: 16px;
-        font-family: var(--go-aw-font-family);
+        font-family: var(--gotools-clarity-font-family);
         font-weight: 600;
         display: inline-block;
-        border-radius: var(--go-aw-border-radius);
+        border-radius: var(--gotools-clarity-border-radius);
         background: #fff;
         border: none;
         min-height: 45px;
@@ -237,11 +237,11 @@
         cursor: pointer;
     }
 
-    .go-aw-menu .go-aw-select:hover {
-        border-color: var(--go-aw-primary-color) !important;
+    .gotools-clarity-menu .gotools-clarity-select:hover {
+        border-color: var(--gotools-clarity-primary-color) !important;
     }
 
-    .go-aw-menu .go-aw-select:focus {
+    .gotools-clarity-menu .gotools-clarity-select:focus {
         background-image:
                 linear-gradient(45deg, black 50%, transparent 50%),
                 linear-gradient(135deg, transparent 50%, black 50%);
@@ -257,28 +257,28 @@
         outline-offset: -2px;
     }
 
-    .go-aw-menu-content {
+    .gotools-clarity-menu-content {
         overflow: auto;
         height: auto;
         padding: 20px 0 15px;
         flex-grow: 1;
     }
 
-    .go-aw-adjust-font {
+    .gotools-clarity-adjust-font {
         background: #fff;
         padding: 20px;
         margin-bottom: 20px;
-        border-radius: var(--go-aw-border-radius);
+        border-radius: var(--gotools-clarity-border-radius);
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     }
 
-    .go-aw-adjust-font .go-aw-label {
+    .gotools-clarity-adjust-font .gotools-clarity-label {
         display: flex;
         justify-content: flex-start;
         gap: 8px;
     }
 
-    .go-aw-adjust-font > div {
+    .gotools-clarity-adjust-font > div {
         display: flex;
         justify-content: space-between;
         margin-top: 12px;
@@ -286,11 +286,11 @@
         font-size: 15px;
     }
 
-    .go-aw-adjust-font .go-aw-label div {
+    .gotools-clarity-adjust-font .gotools-clarity-label div {
         font-size: 15px !important;
     }
 
-    .go-aw-adjust-font div[role="button"] {
+    .gotools-clarity-adjust-font div[role="button"] {
         background: #EFEFEF !important;
         border-radius: 50%;
         width: 36px;
@@ -301,7 +301,7 @@
         cursor: pointer;
     }
 
-    .go-aw-overlay {
+    .gotools-clarity-overlay {
         position: fixed;
         top: 0;
         left: 0;
@@ -326,7 +326,7 @@
         gap: 8px;
         font-weight: 600 !important;
         flex-direction: column;
-        border-radius: var(--go-aw-border-radius);
+        border-radius: var(--gotools-clarity-border-radius);
         padding: 8px 15px;
     }
 
@@ -335,34 +335,46 @@
         margin: 0 auto;
         font-size: 12px;
         display: block;
+        padding: 2px 18px;
+        color: #aaaaaa !important;
     }
 
     .license a {
         text-decoration: none !important;
-        border-radius: var(--go-aw-border-radius);
-        padding: 2px 8px;
+        border-radius: var(--gotools-clarity-border-radius);
         color: #aaaaaa !important;
     }
 
-    .license:hover a {
-        color: #999999 !important;
+    .license .brand {
+        padding-left: 4px;
+        padding-right: 4px;
+        opacity: 0.3;
+        transition: opacity .2s ease;
+    }
+
+    .license .brand:hover {
+        opacity: 1;
+    }
+
+    .license .brand svg {
+        margin-top: -2px;
     }
 
     @media only screen and (max-width: 560px) {
-        .go-aw-menu {
+        .gotools-clarity-menu {
             width: calc(100% - 40px);
         }
     }
 
     @media only screen and (max-width: 420px) {
-        .go-aw-items {
+        .gotools-clarity-items {
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 0.5rem;
         }
     }
 
-    .go-aw-widget,
-    .go-aw-menu {
+    .gotools-clarity-widget,
+    .gotools-clarity-menu {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -371,12 +383,12 @@
         -webkit-font-smoothing: antialiased;
     }
 
-    .go-aw-widget *,
-    .go-aw-menu * {
+    .gotools-clarity-widget *,
+    .gotools-clarity-menu * {
         box-sizing: border-box !important;
     }
 
-    .go-aw-menu-btn {
+    .gotools-clarity-menu-btn {
         position: fixed;
         z-index: 500000;
         left: 30px;
@@ -386,16 +398,16 @@
         border-radius: 50%;
         align-items: center;
         justify-content: center;
-        width: 58px;
-        height: 58px;
+        width: 56px;
+        height: 56px;
         display: flex;
         cursor: pointer;
         text-decoration: none !important;
-        background: var(--go-aw-gradient-color) !important;
+        background: var(--gotools-clarity-gradient-color) !important;
         outline-offset: 2px;
     }
 
-    .go-aw-menu-btn svg {
+    .gotools-clarity-menu-btn svg {
         width: 32px;
         height: 32px;
         min-height: 32px;
@@ -405,17 +417,17 @@
         background: transparent !important;
     }
 
-    .go-aw-menu-btn:hover {
+    .gotools-clarity-menu-btn:hover {
         transform: scale(1.05);
     }
 
     @media only screen and (max-width: 768px) {
-        .go-aw-menu-btn {
+        .gotools-clarity-menu-btn {
             width: 42px;
             height: 42px;
         }
 
-        .go-aw-menu-btn svg {
+        .gotools-clarity-menu-btn svg {
             width: 26px;
             height: 26px;
             min-height: 26px;
@@ -425,8 +437,8 @@
         }
     }
 </style>
-<div class="go-aw-widget">
-    <a href="https://go-west.at" target="_blank" class="go-aw-menu-btn" title="Open Accessibility Menu" role="button" aria-expanded="false">
+<div class="gotools-clarity-widget">
+    <a href="https://go-west.at" target="_blank" class="gotools-clarity-menu-btn" title="Open Accessibility Menu" role="button" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#EEEEEE" viewBox="0 0 256 256"><path d="M100,36a28,28,0,1,1,28,28A28,28,0,0,1,100,36ZM227.6,92.57A15.7,15.7,0,0,0,212,80H44a16,16,0,0,0-6.7,30.53l.06,0,53.89,23.73-21.92,83.3a16,16,0,0,0,7.9,20.91A15.83,15.83,0,0,0,84,240a16,16,0,0,0,14.44-9.06L128,180l29.58,51a16,16,0,0,0,29.07-13.35l-21.92-83.3,54-23.76A15.7,15.7,0,0,0,227.6,92.57Z"></path></svg>
     </a>
 </div>

@@ -65,7 +65,7 @@ export function injectToolCSS(config: IToolConfig) {
         enable=false
     } = config;
 
-    let toolId = `go-aw-${ id }`
+    let toolId = `gotools-clarity-${ id }`
 
     if(enable) {
         let css = generateCSSFromConfig(config);

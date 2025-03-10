@@ -12,7 +12,7 @@ function getTranslatedLabel(el, defaultValue) {
 }
 
 export default function translateMenu(menu) {
-    menu.querySelectorAll(".go-aw-card-title, .go-aw-translate").forEach((el: HTMLDivElement) => {
+    menu.querySelectorAll(".gotools-clarity-card-title, .gotools-clarity-translate").forEach((el: HTMLDivElement) => {
         el.innerText = getTranslatedLabel(el, String(el.innerText || "").trim());
     })
 

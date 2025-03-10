@@ -1,7 +1,7 @@
 {
-  "name": "go-west-accessibility-widget",
-  "version": "0.0.1",
-  "description": "GO.WEST Accessibility Widget",
+  "name": "gotools-clarity-widget",
+  "version": "0.0.2",
+  "description": "GO.WEST Clarity Accessibility Widget",
   "main": "./src/entry.ts",
   "directories": {
     "doc": "docs",
@@ -18,7 +18,7 @@
   },
   "author": "GO.WEST Communications",
   "license": "Subscription",
-  "homepage": "https://tools.go-west.at/accessibility-widget/",
+  "homepage": "https://go-west.tools/clarity/",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.3",

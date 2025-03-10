@@ -8,7 +8,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   mode: "development",
   entry: {
-    sienna: "./src/entry.ts",
+    clarity: "./src/entry.ts",
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -80,7 +80,7 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
     new webpack.BannerPlugin({
-      banner: `GO.WEST Accessibility Widget v${packageJson.version}
+      banner: `GO.WEST Clarity Accessibility Widget v${packageJson.version}
 (c) ${new Date().getFullYear()} ${packageJson.author}
 License: ${packageJson.license}
 Home Page : ${packageJson.homepage}
