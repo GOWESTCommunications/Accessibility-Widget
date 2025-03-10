@@ -2,7 +2,7 @@ import config from "./config";
 
 declare global {
     interface Window {
-        gowestConfig: any;
+        gowestAccessibilityConfig: any;
     }
 }
 
@@ -27,16 +27,16 @@ function initializeSienna() {
         offset = offset.split(",").map(value => parseInt(value));
     }
 
-    const gowestConfig = window.gowestConfig;
-    console.log('GO.WEST Config', gowestConfig);
+    const gowestAccessibilityConfig = window.gowestAccessibilityConfig;
+    console.log('GO.WEST Config', gowestAccessibilityConfig);
 
     config({
         lang, 
         position,
         offset,
-        primaryColor: gowestConfig?.primaryColor,
-        borderRadius: gowestConfig?.borderRadius,
-        fontFamily: gowestConfig?.fontFamily
+        primaryColor: gowestAccessibilityConfig?.primaryColor,
+        borderRadius: gowestAccessibilityConfig?.borderRadius,
+        fontFamily: gowestAccessibilityConfig?.fontFamily
     });
 }
 
