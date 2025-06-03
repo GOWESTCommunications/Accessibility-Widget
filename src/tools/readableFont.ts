@@ -7,12 +7,12 @@ export const readableFontConfig: IToolConfig = {
     selector: `html`,
     childrenSelector: ['', '*:not(.material-icons,.fa)', ...TEXT_SELECTORS],
     styles: {
-        'font-family': 'OpenDyslexic3,Comic Sans MS,Arial,Helvetica,sans-serif'
+        'font-family': 'OpenDyslexic,Comic Sans MS,Arial,Helvetica,sans-serif'
     },
     css: `
         @font-face {
-            font-family: OpenDyslexic3;
-            src: url("https://assets.go-west.tools/fonts/OpenDyslexic3-Regular.woff2") format("woff2");
+            font-family: OpenDyslexic;
+            src: url("https://cdn.go-west.tools/widgets/accessibility/font/opendyslexic") format("woff2");
         }
     `
 }
