@@ -43,12 +43,37 @@ export function renderMenu({
 
     $container.querySelectorAll('.gotools-clarity-menu-close, .gotools-clarity-overlay').forEach((el: HTMLElement) => {
         el.addEventListener('click', () => {
-            toggle($container, false)
+            toggle($container, false);
         });
-    })
+        el.addEventListener('keydown', (e: KeyboardEvent) => {
+            if (e.key === 'Enter' || e.keyCode === 13) {
+                toggle($container, false);
+            }
+        });
+    });
 
     $menu.querySelectorAll(".gotools-clarity-adjust-font div[role='button']").forEach((el: HTMLElement) => {
         el.addEventListener("click", () => {
+            const margin = 0.1;
+
+            let fontSize = getState("fontSize") ?? 1;
+            if(el.classList.contains('gotools-clarity-minus')) {
+            fontSize -= margin;
+            } else {
+            fontSize += margin;
+            }
+
+            fontSize = Math.max(fontSize, 0.1);
+            fontSize = Math.min(fontSize, 2);
+            fontSize = Number(fontSize.toFixed(2));
+            
+            adjustFontSize(fontSize || 1);
+
+            saveState({ fontSize });
+        });
+
+        el.addEventListener("keydown", (e: KeyboardEvent) => {
+            if (e.key === 'Enter' || e.keyCode === 13) {
             const margin = 0.1;
 
             let fontSize = getState("fontSize") ?? 1;
@@ -65,6 +90,7 @@ export function renderMenu({
             adjustFontSize(fontSize || 1);
 
             saveState({ fontSize });
+            }
         });
     });
 
@@ -100,8 +126,14 @@ export function renderMenu({
         });
     });
 
-    $menu.querySelector('.gotools-clarity-menu-reset')?.addEventListener('click', () => {
+    const $resetBtn = $menu.querySelector('.gotools-clarity-menu-reset');
+    $resetBtn?.addEventListener('click', () => {
         reset();
+    });
+    $resetBtn?.addEventListener('keydown', (e: KeyboardEvent) => {
+        if (e.key === 'Enter' || e.keyCode === 13) {
+            reset();
+        }
     });
 
     
