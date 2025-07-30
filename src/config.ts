@@ -23,21 +23,6 @@ export const DEFAULT_OPTIONS: GoAccessibilitySettings = {
 }
 
 export default function config(args?: GoAccessibilitySettings) {
-     
-
-    // try {
-    //     let settings = getSettings(false);
-
-    //     options = {
-    //         ...options,
-    //         ...settings,
-    //     }
-        
-    //     runAccessibility();
-    // } catch(e) {
-    //     // silent error
-    // }
-    //TODO: implement save settings
 
     if (args?.primaryColor !== undefined && args?.primaryColor !== null) {
         args.gradientColor = args.primaryColor;
@@ -53,7 +38,21 @@ export default function config(args?: GoAccessibilitySettings) {
         }, {})
     }
 
-    console.log('Options:', options)
+    try {
+        let settings = getSettings(false);
+
+        options = {
+            ...options,
+            ...settings,
+        }
+        
+        runAccessibility();
+    } catch(e) {
+        //silent catch
+    }
+
+
+    console.log('Options:', options);
 
     
     saveSettings(options);

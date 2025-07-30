@@ -31,13 +31,15 @@ export function getState(key: string): any {
 
 export function getSettings(cache: boolean = true): ISettings {
     if (cache) {
+
         return settings;
     } else {
         const savedSettings = getSavedSettings();
         if (savedSettings) {
             settings = JSON.parse(savedSettings);
         }
-        
+
+
         return settings;
     }
 }
