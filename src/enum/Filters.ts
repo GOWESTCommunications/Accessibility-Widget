@@ -10,7 +10,7 @@ export const FILTERS: IFilters = {
         styles: {
             'color': '#FFF',
             'fill': '#FFF',
-            'background-color': '#000'
+            'background': '#000'
         },
         childrenSelector: TEXT_SELECTORS
     },
@@ -18,7 +18,7 @@ export const FILTERS: IFilters = {
         styles: {
             'color': '#000',
             'fill': '#000',
-            'background-color': '#FFF'
+            'background': '#FFF'
         },
         childrenSelector: TEXT_SELECTORS
     },
