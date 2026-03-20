@@ -1,6 +1,6 @@
 {
   "name": "gotools-clarity-widget",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "GO.WEST Clarity Accessibility Widget",
   "main": "./src/entry.ts",
   "directories": {
