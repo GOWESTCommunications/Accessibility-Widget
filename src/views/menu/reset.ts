@@ -6,5 +6,5 @@ export default function reset() {
 
     runAccessibility();
 
-    document?.querySelectorAll(".gotools-clarity-selected")?.forEach(el => el?.classList?.remove("gotools-clarity-selected"))
+    document?.querySelectorAll(".gotools-topaccess-selected")?.forEach(el => el?.classList?.remove("gotools-topaccess-selected"))
 }

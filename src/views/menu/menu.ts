@@ -30,7 +30,7 @@ export function renderMenu({
     const $container: HTMLElement = document.createElement("div");
     $container.innerHTML = template;
 
-    const $menu: HTMLElement = $container.querySelector(".gotools-clarity-menu");
+    const $menu: HTMLElement = $container.querySelector(".gotools-topaccess-menu");
 
     if(position?.includes("right")) {
         $menu.style.right = '0px';
@@ -38,10 +38,10 @@ export function renderMenu({
     }
 
     $menu.querySelector(".content").innerHTML = renderButtons(ContentButtons);
-    $menu.querySelector(".tools").innerHTML = renderButtons(ToolButtons, 'gotools-clarity-tools');
-    $menu.querySelector(".contrast").innerHTML = renderButtons(FilterButtons, 'gotools-clarity-filter');
+    $menu.querySelector(".tools").innerHTML = renderButtons(ToolButtons, 'gotools-topaccess-tools');
+    $menu.querySelector(".contrast").innerHTML = renderButtons(FilterButtons, 'gotools-topaccess-filter');
 
-    $container.querySelectorAll('.gotools-clarity-menu-close, .gotools-clarity-overlay').forEach((el: HTMLElement) => {
+    $container.querySelectorAll('.gotools-topaccess-menu-close, .gotools-topaccess-overlay').forEach((el: HTMLElement) => {
         el.addEventListener('click', () => {
             toggle($container, false);
         });
@@ -52,12 +52,12 @@ export function renderMenu({
         });
     });
 
-    $menu.querySelectorAll(".gotools-clarity-adjust-font div[role='button']").forEach((el: HTMLElement) => {
+    $menu.querySelectorAll(".gotools-topaccess-adjust-font div[role='button']").forEach((el: HTMLElement) => {
         el.addEventListener("click", () => {
             const margin = 0.1;
 
             let fontSize = getState("fontSize") ?? 1;
-            if(el.classList.contains('gotools-clarity-minus')) {
+            if(el.classList.contains('gotools-topaccess-minus')) {
             fontSize -= margin;
             } else {
             fontSize += margin;
@@ -77,7 +77,7 @@ export function renderMenu({
             const margin = 0.1;
 
             let fontSize = getState("fontSize") ?? 1;
-            if(el.classList.contains('gotools-clarity-minus')) {
+            if(el.classList.contains('gotools-topaccess-minus')) {
                 fontSize -= margin;
             } else {
                 fontSize += margin;
@@ -94,15 +94,15 @@ export function renderMenu({
         });
     });
 
-    $menu.querySelectorAll(".gotools-clarity-btn").forEach((el: HTMLElement) => {
+    $menu.querySelectorAll(".gotools-topaccess-btn").forEach((el: HTMLElement) => {
         el.addEventListener("click", () => {
             let key = el.dataset.key;
 
-            let isSelected = !el.classList.contains("gotools-clarity-selected");
+            let isSelected = !el.classList.contains("gotools-topaccess-selected");
 
-            if(el.classList.contains('gotools-clarity-filter')) {
-                $menu.querySelectorAll('.gotools-clarity-filter').forEach((el: HTMLElement) => {
-                    el.classList.remove('gotools-clarity-selected');
+            if(el.classList.contains('gotools-topaccess-filter')) {
+                $menu.querySelectorAll('.gotools-topaccess-filter').forEach((el: HTMLElement) => {
+                    el.classList.remove('gotools-topaccess-selected');
                 });
 
                 saveState({
@@ -110,12 +110,12 @@ export function renderMenu({
                 });
 
                 if(isSelected) {
-                    el.classList.add('gotools-clarity-selected');
+                    el.classList.add('gotools-topaccess-selected');
                 }
 
                 renderFilter();
             } else {
-                el.classList.toggle('gotools-clarity-selected', isSelected);
+                el.classList.toggle('gotools-topaccess-selected', isSelected);
 
                 saveState({
                     [key]: isSelected
@@ -126,7 +126,7 @@ export function renderMenu({
         });
     });
 
-    const $resetBtn = $menu.querySelector('.gotools-clarity-menu-reset');
+    const $resetBtn = $menu.querySelector('.gotools-topaccess-menu-reset');
     $resetBtn?.addEventListener('click', () => {
         reset();
     });
@@ -142,10 +142,10 @@ export function renderMenu({
     let fontSize = Number(settings?.states?.fontSize) || 1;
 
     if(fontSize != 1) {
-        $menu.querySelector(".gotools-clarity-amount").innerHTML = `${ fontSize * 100 }%`;
+        $menu.querySelector(".gotools-topaccess-amount").innerHTML = `${ fontSize * 100 }%`;
     }
 
-    let $lang: HTMLSelectElement = $menu.querySelector("#gotools-clarity-language");
+    let $lang: HTMLSelectElement = $menu.querySelector("#gotools-topaccess-language");
     $lang.innerHTML = LANGUAGES.map((lang: ILanguage) => `<option value="${lang.code}">${lang.label}</option>`).join('');
 
     if(settings.lang !== options.lang) {
@@ -170,7 +170,7 @@ export function renderMenu({
         for(let key in settings.states) {
             if(settings.states[key] && key !== "fontSize") {
                 let selector = key === "contrast" ? settings.states[key] : key;
-                $menu.querySelector(`.gotools-clarity-btn[data-key="${ selector }"]`)?.classList?.add("gotools-clarity-selected")
+                $menu.querySelector(`.gotools-topaccess-btn[data-key="${ selector }"]`)?.classList?.add("gotools-topaccess-selected")
             }
         }
     }

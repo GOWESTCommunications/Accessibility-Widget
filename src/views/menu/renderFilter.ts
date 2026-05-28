@@ -20,7 +20,7 @@ export default function renderFilter() {
 
     addStylesheet({
         css, 
-        id: 'gotools-clarity-filter-style'
+        id: 'gotools-topaccess-filter-style'
     });
     
     document.documentElement.classList.toggle("aws-filter", Boolean(contrast));

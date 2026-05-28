@@ -2,6 +2,8 @@ import config from "./config";
 
 declare global {
     interface Window {
+        gotoolsTopAccessConfig: any;
+        /** @deprecated Use gotoolsTopAccessConfig instead. Kept for legacy integrations. */
         gotoolsClarityConfig: any;
     }
 }
@@ -11,7 +13,7 @@ function getDataAttribute(attr: string) {
     return document?.querySelector(`[${ attr }]`)?.getAttribute(attr)
 }
 
-function initializeClarityWidget() {
+function initializeTopAccessWidget() {
     let lang: string = navigator?.language;
     let position: string = getDataAttribute("position")
     let offset: string | number[] = getDataAttribute("offset");
@@ -27,23 +29,24 @@ function initializeClarityWidget() {
         offset = offset.split(",").map(value => parseInt(value));
     }
 
-    const gotoolsClarityConfig = window.gotoolsClarityConfig;
-    console.log('GO.WEST Config', gotoolsClarityConfig);
+    // Fallback to legacy gotoolsClarityConfig if the new variable was not provided.
+    const gotoolsTopAccessConfig = window.gotoolsTopAccessConfig ?? window.gotoolsClarityConfig;
+    console.log('GO.WEST Config', gotoolsTopAccessConfig);
 
     config({
         lang, 
         position,
         offset,
-        primaryColor: gotoolsClarityConfig?.primaryColor,
-        borderRadius: gotoolsClarityConfig?.borderRadius,
-        fontFamily: gotoolsClarityConfig?.fontFamily
+        primaryColor: gotoolsTopAccessConfig?.primaryColor,
+        borderRadius: gotoolsTopAccessConfig?.borderRadius,
+        fontFamily: gotoolsTopAccessConfig?.fontFamily
     });
 }
 
 function checkReadyState() {
     if (document.readyState === 'complete' || document.readyState === 'interactive') {
         // Document is ready, call the initialization function
-        initializeClarityWidget();
+        initializeTopAccessWidget();
 
         // Remove the event listener to ensure it's only executed once
         document.removeEventListener('readystatechange', checkReadyState);

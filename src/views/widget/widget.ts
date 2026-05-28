@@ -13,9 +13,9 @@ export function renderWidget(options: GoAccessibilitySettings) {
 
     const widget: HTMLElement = document.createElement("div");
     widget.innerHTML = template;
-    widget.classList.add("gotools-clarity-container");
+    widget.classList.add("gotools-topaccess-container");
 
-    let $btn: HTMLElement = widget.querySelector(".gotools-clarity-menu-btn");
+    let $btn: HTMLElement = widget.querySelector(".gotools-topaccess-menu-btn");
 
     let offsetX = offset?.[0] ?? 20;
     let offsetY = offset?.[1] ?? 25;
@@ -74,10 +74,10 @@ export function renderWidget(options: GoAccessibilitySettings) {
     }
 
     Object.assign($btn.style, buttonStyle);
-    widget.style.setProperty('--gotools-clarity-primary-color', options.primaryColor);
-    widget.style.setProperty('--gotools-clarity-gradient-color', options.gradientColor);
-    widget.style.setProperty('--gotools-clarity-border-radius', options.borderRadius + 'px');
-    widget.style.setProperty('--gotools-clarity-font-family', options.fontFamily);
+    widget.style.setProperty('--gotools-topaccess-primary-color', options.primaryColor);
+    widget.style.setProperty('--gotools-topaccess-gradient-color', options.gradientColor);
+    widget.style.setProperty('--gotools-topaccess-border-radius', options.borderRadius + 'px');
+    widget.style.setProperty('--gotools-topaccess-font-family', options.fontFamily);
 
     let menu;
     $btn?.addEventListener("click", (event) => {    

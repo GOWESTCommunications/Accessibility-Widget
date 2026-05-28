@@ -3,7 +3,7 @@ import { ISettings } from "./types/ISettings";
 
 let settings: ISettings = {};
 
-export const COOKIE_KEY = "gotools-clarity";
+export const COOKIE_KEY = "gotools-topaccess";
 
 export function saveState(payload): ISettings {
     const newSettings = {

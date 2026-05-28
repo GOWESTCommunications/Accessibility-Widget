@@ -1,25 +1,25 @@
 <style>
-    body [data-gotools-clarity-orgfontsize] {
-        font-size: var(--gotools-clarity-fontSize);
+    body [data-gotools-topaccess-orgfontsize] {
+        font-size: var(--gotools-topaccess-fontSize);
     }
-    .gotools-clarity-widget *:focus {
-        outline: solid 2px var(--gotools-clarity-primary-color) !important; 
+    .gotools-topaccess-widget *:focus {
+        outline: solid 2px var(--gotools-topaccess-primary-color) !important; 
         outline-offset: -2px;
     }
-    .gotools-clarity-widget *:focus:not(:focus-visible) {
+    .gotools-topaccess-widget *:focus:not(:focus-visible) {
         outline: none !important;
     }
 
-    .gotools-clarity-menu-header *:focus {
+    .gotools-topaccess-menu-header *:focus {
         outline: solid 2px white !important; 
         outline-offset: 2px;
     }
 
-    .gotools-clarity-menu-header *:focus:not(:focus-visible) {
+    .gotools-topaccess-menu-header *:focus:not(:focus-visible) {
         outline: none !important;
     }
 
-    .gotools-clarity-menu {
+    .gotools-topaccess-menu {
         position: fixed;
         left: 20px;
         bottom: 20px;
@@ -35,21 +35,21 @@
         max-height: calc(100% - 40px);
         height: fit-content;
         letter-spacing: 0.015em;
-        border-radius: var(--gotools-clarity-border-radius);
+        border-radius: var(--gotools-topaccess-border-radius);
         display: flex;
         flex-direction: column;
     }
 
-    .gotools-clarity-menu * {
+    .gotools-topaccess-menu * {
         color: #000 !important;
-        font-family: var(--gotools-clarity-font-family);
+        font-family: var(--gotools-topaccess-font-family);
         padding: 0;
         margin: 0;
         line-height: 1 !important;
         letter-spacing: normal !important;
     }
 
-    .gotools-clarity-menu-header {
+    .gotools-topaccess-menu-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -57,18 +57,18 @@
         padding-right: 18px;
         height: 60px;
         font-weight: 700 !important;
-        background: var(--gotools-clarity-gradient-color) no-repeat bottom right !important;
+        background: var(--gotools-topaccess-gradient-color) no-repeat bottom right !important;
         background-size: 200%, 100% !important;
         flex-shrink: 0;
     }
 
-    .gotools-clarity-menu-title {
+    .gotools-topaccess-menu-title {
         font-size: 16px !important;
         color: #fff !important;
     }
     
-    .gotools-clarity-menu-header svg {
-        fill: var(--gotools-clarity-primary-color) !important;
+    .gotools-topaccess-menu-header svg {
+        fill: var(--gotools-topaccess-primary-color) !important;
         width: 24px !important;
         height: 24px !important;
         min-width: 24px !important;
@@ -77,11 +77,11 @@
         max-height: 24px !important;
     }
 
-    .gotools-clarity-menu-header > div {
+    .gotools-topaccess-menu-header > div {
         display: flex;
     }
 
-    .gotools-clarity-menu-header div[role="button"] {
+    .gotools-topaccess-menu-header div[role="button"] {
         background: white !important;
         cursor: pointer;
         border-radius: 50%;
@@ -93,36 +93,36 @@
         justify-content: center;
     }
 
-    .gotools-clarity-menu-header div[role="button"]:hover {
+    .gotools-topaccess-menu-header div[role="button"]:hover {
         opacity: 0.8;
     }
 
-    .gotools-clarity-card {
+    .gotools-topaccess-card {
         margin: 0 18px 1rem;
     }
 
     @media only screen and (max-width: 420px) {
-        .gotools-clarity-card {
+        .gotools-topaccess-card {
             margin: 0 18px 0.5rem;
         }
     }
 
-    .gotools-clarity-card-title {
+    .gotools-topaccess-card-title {
         font-size: 14px !important;
         padding: 15px 0;
         font-weight: 600 !important;
         opacity: 0.8;
     }
 
-    .gotools-clarity-items {
+    .gotools-topaccess-items {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1rem;
     }
 
-    .gotools-clarity-btn {
+    .gotools-topaccess-btn {
         aspect-ratio: 6 / 5;
-        border-radius: var(--gotools-clarity-border-radius);
+        border-radius: var(--gotools-topaccess-border-radius);
         padding: 0 15px;
         display: flex;
         align-items: center;
@@ -142,31 +142,31 @@
         background-clip: border-box !important;
     }
 
-    .gotools-clarity-btn .gotools-clarity-translate,
-    .gotools-clarity-adjust-font .gotools-clarity-label div {
+    .gotools-topaccess-btn .gotools-topaccess-translate,
+    .gotools-topaccess-adjust-font .gotools-topaccess-label div {
         font-size: 14px !important;
         font-weight: 600 !important;
     }
 
-    .gotools-clarity-plus,
-    .gotools-clarity-minus {
+    .gotools-topaccess-plus,
+    .gotools-topaccess-minus {
         background-color: #EFEFEF !important;
         border: 2px solid transparent;
         transition: border .2s ease;
     }
 
     
-    .gotools-clarity-plus:hover,
-    .gotools-clarity-minus:hover {
-        border-color: var(--gotools-clarity-primary-color) !important;
+    .gotools-topaccess-plus:hover,
+    .gotools-topaccess-minus:hover {
+        border-color: var(--gotools-topaccess-primary-color) !important;
     }
 
-    .gotools-clarity-amount {
+    .gotools-topaccess-amount {
         font-size: 18px !important;
         font-weight: 600 !important;
     }
 
-    .gotools-clarity-adjust-font svg {
+    .gotools-topaccess-adjust-font svg {
         width: 24px !important;
         height: 24px !important;
         min-width: 24px !important;
@@ -175,8 +175,8 @@
         max-height: 24px !important;
     }
     
-    .gotools-clarity-label svg,
-    .gotools-clarity-btn svg {
+    .gotools-topaccess-label svg,
+    .gotools-topaccess-btn svg {
         width: 32px !important;
         height: 32px !important;
         min-width: 32px !important;
@@ -185,32 +185,32 @@
         max-height: 32px !important;
     }
 
-    .gotools-clarity-btn:hover {
-        border-color: var(--gotools-clarity-primary-color) !important;
+    .gotools-topaccess-btn:hover {
+        border-color: var(--gotools-topaccess-primary-color) !important;
     }
 
-    .gotools-clarity-btn.gotools-clarity-selected {
-        background: var(--gotools-clarity-primary-color) !important;
+    .gotools-topaccess-btn.gotools-topaccess-selected {
+        background: var(--gotools-topaccess-primary-color) !important;
     }
 
-    .gotools-clarity-btn.gotools-clarity-selected svg,
-    .gotools-clarity-btn.gotools-clarity-selected span {
+    .gotools-topaccess-btn.gotools-topaccess-selected svg,
+    .gotools-topaccess-btn.gotools-topaccess-selected span {
         fill: white !important;
         color: white !important;
     }
 
-    html.aws-filter .gotools-clarity-btn.gotools-clarity-selected svg {
+    html.aws-filter .gotools-topaccess-btn.gotools-topaccess-selected svg {
         background-color: transparent !important;
     }
 
-    .gotools-clarity-menu .gotools-clarity-select {
+    .gotools-topaccess-menu .gotools-topaccess-select {
         width: 100%;
         padding: 0.5em 3.5em 0.5em 1em;
         font-size: 16px;
-        font-family: var(--gotools-clarity-font-family);
+        font-family: var(--gotools-topaccess-font-family);
         font-weight: 600;
         display: inline-block;
-        border-radius: var(--gotools-clarity-border-radius);
+        border-radius: var(--gotools-topaccess-border-radius);
         background: #fff;
         border: none;
         min-height: 45px;
@@ -240,11 +240,11 @@
         cursor: pointer;
     }
 
-    .gotools-clarity-menu .gotools-clarity-select:hover {
-        border-color: var(--gotools-clarity-primary-color) !important;
+    .gotools-topaccess-menu .gotools-topaccess-select:hover {
+        border-color: var(--gotools-topaccess-primary-color) !important;
     }
 
-    .gotools-clarity-menu .gotools-clarity-select:focus {
+    .gotools-topaccess-menu .gotools-topaccess-select:focus {
         background-image:
                 linear-gradient(45deg, black 50%, transparent 50%),
                 linear-gradient(135deg, transparent 50%, black 50%);
@@ -260,27 +260,27 @@
         outline-offset: -2px;
     }
 
-    .gotools-clarity-menu-content {
+    .gotools-topaccess-menu-content {
         overflow: auto;
         height: auto;
         padding: 20px 0 15px;
         flex-grow: 1;
     }
 
-    .gotools-clarity-adjust-font {
+    .gotools-topaccess-adjust-font {
         background: #fff;
         padding: 20px;
-        border-radius: var(--gotools-clarity-border-radius);
+        border-radius: var(--gotools-topaccess-border-radius);
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
     }
 
-    .gotools-clarity-adjust-font .gotools-clarity-label {
+    .gotools-topaccess-adjust-font .gotools-topaccess-label {
         display: flex;
         justify-content: flex-start;
         gap: 8px;
     }
 
-    .gotools-clarity-adjust-font > div {
+    .gotools-topaccess-adjust-font > div {
         display: flex;
         justify-content: space-between;
         margin-top: 12px;
@@ -288,11 +288,11 @@
         font-size: 15px;
     }
 
-    .gotools-clarity-adjust-font .gotools-clarity-label div {
+    .gotools-topaccess-adjust-font .gotools-topaccess-label div {
         font-size: 15px !important;
     }
 
-    .gotools-clarity-adjust-font div[role="button"] {
+    .gotools-topaccess-adjust-font div[role="button"] {
         background: #EFEFEF !important;
         border-radius: 50%;
         width: 36px;
@@ -303,7 +303,7 @@
         cursor: pointer;
     }
 
-    .gotools-clarity-overlay {
+    .gotools-topaccess-overlay {
         position: fixed;
         top: 0;
         left: 0;
@@ -312,7 +312,7 @@
         z-index: 10000;
     }
 
-    .gotools-clarity-container .contribution {
+    .gotools-topaccess-container .contribution {
         padding: 8px 15px 0px 15px;
         font-size: 14px;
         display: flex;
@@ -320,7 +320,7 @@
         justify-content: center;
     }
 
-    .gotools-clarity-container.contribution a {
+    .gotools-topaccess-container.contribution a {
         text-decoration: none !important;
         display: flex;
         align-items: center;
@@ -328,55 +328,62 @@
         gap: 8px;
         font-weight: 600 !important;
         flex-direction: column;
-        border-radius: var(--gotools-clarity-border-radius);
+        border-radius: var(--gotools-topaccess-border-radius);
         padding: 8px 15px;
     }
 
-    .gotools-clarity-container .license {
+    .gotools-topaccess-container .license {
         text-align: center;
         margin: 0 auto;
         font-size: 12px;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
         padding: 2px 18px;
         color: #aaaaaa !important;
     }
 
-    .gotools-clarity-container .license a {
+    .gotools-topaccess-container .license a {
         text-decoration: none !important;
-        border-radius: var(--gotools-clarity-border-radius);
+        border-radius: var(--gotools-topaccess-border-radius);
         color: #aaaaaa !important;
     }
 
-    .gotools-clarity-container .license .brand {
-        padding-left: 4px;
-        padding-right: 4px;
+    .gotools-topaccess-container .license .brand {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4px;
         opacity: 0.3;
         transition: opacity .2s ease;
     }
 
-    .gotools-clarity-container .license .brand:hover {
+    .gotools-topaccess-container .license .brand:hover {
         opacity: 1;
     }
 
-    .gotools-clarity-container .license .brand svg {
-        margin-top: -2px;
+    .gotools-topaccess-container .license .brand svg {
+        width: 98px;
+        height: auto;
+        display: block;
     }
 
     @media only screen and (max-width: 560px) {
-        .gotools-clarity-menu {
+        .gotools-topaccess-menu {
             width: calc(100% - 40px);
         }
     }
 
     @media only screen and (max-width: 420px) {
-        .gotools-clarity-items {
+        .gotools-topaccess-items {
             grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 0.5rem;
         }
     }
 
-    .gotools-clarity-widget,
-    .gotools-clarity-menu {
+    .gotools-topaccess-widget,
+    .gotools-topaccess-menu {
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -385,12 +392,12 @@
         -webkit-font-smoothing: antialiased;
     }
 
-    .gotools-clarity-widget *,
-    .gotools-clarity-menu * {
+    .gotools-topaccess-widget *,
+    .gotools-topaccess-menu * {
         box-sizing: border-box !important;
     }
 
-    .gotools-clarity-menu-btn {
+    .gotools-topaccess-menu-btn {
         position: fixed;
         z-index: 500000;
         left: 30px;
@@ -405,11 +412,11 @@
         display: flex;
         cursor: pointer;
         text-decoration: none !important;
-        background: var(--gotools-clarity-gradient-color) !important;
+        background: var(--gotools-topaccess-gradient-color) !important;
         outline-offset: 2px;
     }
 
-    .gotools-clarity-menu-btn svg {
+    .gotools-topaccess-menu-btn svg {
         width: 32px;
         height: 32px;
         min-height: 32px;
@@ -419,17 +426,17 @@
         background: transparent !important;
     }
 
-    .gotools-clarity-menu-btn:hover {
+    .gotools-topaccess-menu-btn:hover {
         transform: scale(1.05);
     }
 
     @media only screen and (max-width: 768px) {
-        .gotools-clarity-menu-btn {
+        .gotools-topaccess-menu-btn {
             width: 42px;
             height: 42px;
         }
 
-        .gotools-clarity-menu-btn svg {
+        .gotools-topaccess-menu-btn svg {
             width: 26px;
             height: 26px;
             min-height: 26px;
@@ -439,8 +446,8 @@
         }
     }
 </style>
-<div class="gotools-clarity-widget">
-    <a href="https://s.go-west.at/clarity" target="_blank" class="gotools-clarity-menu-btn" title="Open Accessibility Menu" role="button" aria-expanded="false">
+<div class="gotools-topaccess-widget">
+    <a href="https://short.go-west.at/topaccess" target="_blank" class="gotools-topaccess-menu-btn" title="Open Accessibility Menu" role="button" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#EEEEEE" viewBox="0 0 256 256"><path d="M100,36a28,28,0,1,1,28,28A28,28,0,0,1,100,36ZM227.6,92.57A15.7,15.7,0,0,0,212,80H44a16,16,0,0,0-6.7,30.53l.06,0,53.89,23.73-21.92,83.3a16,16,0,0,0,7.9,20.91A15.83,15.83,0,0,0,84,240a16,16,0,0,0,14.44-9.06L128,180l29.58,51a16,16,0,0,0,29.07-13.35l-21.92-83.3,54-23.76A15.7,15.7,0,0,0,227.6,92.57Z"></path></svg>
     </a>
 </div>
